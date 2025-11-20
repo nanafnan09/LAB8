@@ -382,17 +382,17 @@ header('location: index.php');
 ?>
 ```
 
-![foto](https://github.com/nanafnan09/LAB8/blob/da50adc5dada334902e69bcd56b671bcc0327758/Lab%208%20Image/8.png)
 
-Hapus Data (DELETE - hapus.php)
 
-Menerima id barang melalui parameter URL ($_GET['id']).
+Hapus Data (`DELETE` - hapus.php)
 
-Menghapus data barang yang sesuai dari tabel data_barang menggunakan query DELETE.
+Menerima id barang melalui parameter URL `($_GET['id'])`.
+
+Menghapus data barang yang sesuai dari tabel data_barang menggunakan query `DELETE`.
 
 Pada index.php, fungsi onclick="return confirm(...) ditambahkan pada tautan hapus untuk memastikan pengguna benar-benar ingin menghapus data.
 
-Setelah berhasil, pengguna diarahkan kembali ke index.php.
+Setelah berhasil, pengguna diarahkan kembali ke `index.php`.
 
 
 
