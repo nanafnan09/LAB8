@@ -358,17 +358,17 @@ function is_select($var, $val) {
 
 Ubah Data (UPDATE - ubah.php)
 
-Menampilkan Data Lama: Ketika diakses melalui URL ubah.php?id=..., script akan mengambil data barang berdasarkan id_barang dan menampilkannya di form (GET request).
+Menampilkan Data Lama: Ketika diakses melalui URL `ubah.php` `?id=...,` script akan mengambil data barang berdasarkan `id_barang` dan menampilkannya di form (`GET request`).
 
-Fungsi helper is_select() digunakan untuk menjaga opsi <select> Kategori tetap terpilih sesuai data lama.
+Fungsi helper `is_select()` digunakan untuk menjaga opsi `<select>` Kategori tetap terpilih sesuai data lama.
 
-Menyimpan Perubahan: Setelah formulir disubmit (POST request):
+Menyimpan Perubahan: Setelah formulir disubmit (`POST request`):
 
-Data barang akan diperbarui menggunakan query UPDATE.
+Data barang akan diperbarui menggunakan query `UPDATE`.
 
 Jika ada file gambar baru yang diunggah, gambar lama akan diganti. Jika tidak ada gambar baru, jalur gambar lama akan dipertahankan.
 
-Setelah berhasil, pengguna diarahkan kembali ke index.php.
+Setelah berhasil, pengguna diarahkan kembali ke `index.php`.
 
 8.
 
@@ -382,17 +382,17 @@ header('location: index.php');
 ?>
 ```
 
+![foto](https://github.com/nanafnan09/LAB8/blob/da50adc5dada334902e69bcd56b671bcc0327758/Lab%208%20Image/8.png)
 
+Hapus Data (DELETE - hapus.php)
 
-Hapus Data (`DELETE` - hapus.php)
+Menerima id barang melalui parameter URL ($_GET['id']).
 
-Menerima id barang melalui parameter URL `($_GET['id'])`.
-
-Menghapus data barang yang sesuai dari tabel data_barang menggunakan query `DELETE`.
+Menghapus data barang yang sesuai dari tabel data_barang menggunakan query DELETE.
 
 Pada index.php, fungsi onclick="return confirm(...) ditambahkan pada tautan hapus untuk memastikan pengguna benar-benar ingin menghapus data.
 
-Setelah berhasil, pengguna diarahkan kembali ke `index.php`.
+Setelah berhasil, pengguna diarahkan kembali ke index.php.
 
 
 
