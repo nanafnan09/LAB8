@@ -371,27 +371,4 @@ Jika ada file gambar baru yang diunggah, gambar lama akan diganti. Jika tidak ad
 Setelah berhasil, pengguna diarahkan kembali ke index.php.
 
 
-8.
-
-```php
-<?php
-include_once 'koneksi.php';
-$id = $_GET['id'];
-$sql = "DELETE FROM data_barang WHERE id_barang = '{$id}'";
-$result = mysqli_query($conn, $sql);
-header('location: index.php');
-?>
-```
-
-![foto](https://github.com/nanafnan09/LAB8/blob/da50adc5dada334902e69bcd56b671bcc0327758/Lab%208%20Image/8.png)
-
-Hapus Data (DELETE - hapus.php)
-
-Menerima id barang melalui parameter URL ($_GET['id']).
-
-Menghapus data barang yang sesuai dari tabel data_barang menggunakan query DELETE.
-
-Pada index.php, fungsi onclick="return confirm(...) ditambahkan pada tautan hapus untuk memastikan pengguna benar-benar ingin menghapus data.
-
-Setelah berhasil, pengguna diarahkan kembali ke index.php.
 
